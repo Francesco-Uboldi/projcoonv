@@ -22,11 +22,11 @@ Where:
 
 **`epsgto`**  : character string specifying a CRS
 
-**`x`**: `real(8)` (8-byte float),  
+**`x`**: `real(8)` or `real(4)` (8-byte  or 4-byte float),  
 &nbsp; &nbsp; on &nbsp;input, Easting  coordinate in **`epsgfrom`** CRS  
 &nbsp; &nbsp; on output, Easting  coordinate in **`epsgto`** CRS
 
-**`y`**: `real(8)` (8-byte float),  
+**`y`**: `real(8)` or `real(4)` (8-byte  or 4-byte float),  
 &nbsp; &nbsp; on &nbsp;input, Northing coordinate in **`epsgfrom`** CRS  
 &nbsp; &nbsp; on output, Northing coordinate in **`epsgto`** CRS
 
@@ -43,7 +43,7 @@ For precision of *about* 1 m, 5 digits may be considered sufficient (this is up 
 ## Compilation and test
 
 The Fortran main **`pr_modpj.f90`** 
-is provided as an example. It takes command line arguments and perform a coordinate conversion as shown in [doc/examples.md](doc/examples.md).  
+is provided as an example. It takes command line arguments and performs a coordinate conversion as shown in [doc/examples.md](doc/examples.md).  
 **`pr_modpj_f.f90`** is the same as  **`pr_modpj.f90`**, but uses `real(4)` variables.  
 
 Compile this way:
@@ -63,7 +63,5 @@ If the provided example main has been compiled, it can be used from command line
 See [doc/examples.md](doc/examples.md).
 
 
-
 The current [version](VERSION) has been written for PROJ-8 and successfully tested with versions of PROJ up to 9.2.1
-
 
