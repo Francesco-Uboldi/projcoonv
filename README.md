@@ -49,10 +49,10 @@ is provided as an example. It takes command line arguments and performs a coordi
 Compile this way:
 
 ```
-gfortran src/projcoonv.c src/pjcoonv_module.f90 main/pr_modpj.f90 -lproj -lstdc++ -o pjcoonv
+gfortran src/projcoonv.c src/pjcoonv_module.f90 test/pr_modpj.f90 -lproj -lstdc++ -o pjcoonv
 ```
 
-Substitute `main/pr_modpj.f90` with your own Fortran code.
+Substitute `test/pr_modpj.f90` with your own Fortran code.
 
 If the provided example main has been compiled, it can be used from command line as:
 
