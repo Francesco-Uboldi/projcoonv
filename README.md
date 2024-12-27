@@ -42,6 +42,8 @@ For precision of *about* 1 m, 5 digits may be considered sufficient (this is up 
 
 ## Compilation and test
 
+**Remark:** the **PROJ** libraries must be installed on your system. In particular, for system using apt/synaptic the package `libproj-dev` is required.
+
 The Fortran main **`pr_modpj.f90`** 
 is provided as an example. It takes command line arguments and performs a coordinate conversion as shown in [doc/examples.md](doc/examples.md).  
 **`pr_modpj_f.f90`** is the same as  **`pr_modpj.f90`**, but uses `real(4)` variables.  
